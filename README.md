@@ -1,6 +1,8 @@
 # mystery-hat-bot
 For da amazing bunker simulator
 
+Detects pixels to automate and optimize getting the forcefield hat
+
 * Make sure your monitor is set to 1080p!! Or else you will need to run the source code with modified parameters
 * Set zoom to 100, make sure taskbar exists and is on bottom
 * You need a JRE (Java Runtime Environment) for this
@@ -25,4 +27,4 @@ For da amazing bunker simulator
 task manager
 
 # What if I don't have 1080p?
-You will need to download AutoHotKey and a Java IDE to edit the source code, then you can run it from there.
+You will need to download AutoHotKey and a Java IDE to edit the pixels being detected in the source code, then you can run it from there.
