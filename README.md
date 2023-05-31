@@ -21,3 +21,6 @@ For da amazing bunker simulator
 
 # How to Close
 task manager
+
+# What if I don't have 1080p?
+You will need to download AutoHotKey and a Java IDE to edit the source code, then you can run it from there.
