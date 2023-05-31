@@ -34,3 +34,5 @@ Screenshot your screen with the bingo cards out, paste it in paint or something 
 Zoom in, put the x values of the RED pixels in the first array, and the y values of the PURPLE pixels in the second array
 
 [These pixels but on your own screenshot](https://cdn.discordapp.com/attachments/401130434378989592/1113543650673168426/bingomoment.png)
+
+And update the AHK script click location for your take a bingo card button location
