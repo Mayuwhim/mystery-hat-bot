@@ -7,7 +7,9 @@ For da amazing bunker simulator
 
 # Installation
 1. Download `ForcefieldHatBot.jar` if you are on Windows 10, or `ForcefieldHatBotW11.jar` if Windows 11
+
      i) The only difference is the pixel locations as W11 topbar is smaller
+
 2. Download `ForcefieldHatBot_2.exe`
 
 # How to Use
