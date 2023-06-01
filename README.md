@@ -5,7 +5,7 @@ Detects pixels to automate and optimize getting the forcefield hat
 
 * Make sure your monitor is set to 1080p!! Or else you will need to run the source code with modified parameters
 * Set zoom to 100, make sure taskbar exists and is on bottom
-* You need a JRE (Java Runtime Environment) for this
+* You need a [JRE (Java Runtime Environment)](https://www.oracle.com/java/technologies/downloads/#jdk20-windows) for this
 
 # Installation
 1. Download `ForcefieldHatBot.jar` if you are on Windows 10, or `ForcefieldHatBotW11.jar` if Windows 11
