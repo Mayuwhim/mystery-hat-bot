@@ -10,7 +10,7 @@ Detects pixels to automate and optimize getting the forcefield hat
 # Installation
 1. Download `ForcefieldHatBot.jar` if you are on Windows 10, or `ForcefieldHatBotW11.jar` if Windows 11
 
-     i) The only difference is the pixel locations as W11 topbar is smaller
+     i) The only difference is the pixel locations as W11 taskbar is bigger
 
 2. Download `ForcefieldHatBot_2.exe`
 
@@ -26,7 +26,7 @@ Detects pixels to automate and optimize getting the forcefield hat
 # How to Close
 task manager
 
-# What if I don't have 1080p?
+# What if I don't have 1080p? / What if my screen doesn't line up?
 You will need to download AutoHotKey and a Java IDE to edit the pixels being detected in the source code, then you can run it from there.
 
 Screenshot your screen with the bingo cards out, paste it in paint or something that shows pixel locations
