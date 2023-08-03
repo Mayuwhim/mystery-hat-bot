@@ -1,6 +1,6 @@
 /* Written by Hoioidoi (Mayuwhim)
- * May 31, 2023
- * da amazing bunker simulator Forcefield Hat Bot
+ * August 08, 2023
+ * da amazing bunker simulator Forcefield Hat Bot V2
  * Please use with AHK program!
  */
 
@@ -11,12 +11,18 @@ import java.awt.Color;
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 
+import org.jnativehook.GlobalScreen;
+import org.jnativehook.NativeHookException;
+import org.jnativehook.keyboard.NativeKeyEvent;
+import org.jnativehook.keyboard.NativeKeyListener;
+
 public class ForcefieldHatBot {
 	
 	final static int[] COLS = {723,753,783,813,816,1103,1133,1163,1193,1196}; //bingo square pixels x pos (CHANGE IF NECESSARY)
 	final static int[] ROWS = {503,505,535,593,595}; //bingo square pixels y pos (CHANGE IF NECESSARY)
 	
 	//{499,501,531,589,591} W11 y positions
+	//{503,505,535,593,595} W10 y positions
 	
 	//board positions you check for (can be modified)
 	final static int[][][] STATES = {
@@ -79,6 +85,32 @@ public class ForcefieldHatBot {
 	};
 	
 	public static void main(String[] args) throws AWTException {
+		//init termination hotkey
+		try {
+			GlobalScreen.registerNativeHook();
+		} catch (NativeHookException e) {
+			// IDK HOW THIS ERROR WOULD OCCUR BUT IF IT DOES KILL THE PROGRAM I GUESS
+			e.printStackTrace();
+			System.exit(0);
+		}
+		GlobalScreen.addNativeKeyListener(new NativeKeyListener() {
+			@Override
+			public void nativeKeyTyped(NativeKeyEvent e) {}
+
+			@Override
+			public void nativeKeyPressed(NativeKeyEvent e) {}
+
+			@Override
+			public void nativeKeyReleased(NativeKeyEvent e) {
+				//hotkey is currently P, feel free to change (but you will need to change AHK script close hotkey too)
+				if (e.getKeyCode() == 25) {
+					System.out.println("diesofcringe");
+					System.exit(0);
+				}
+			}
+		});
+		
+		
 		Robot bot = new Robot();
 		
 		//Focus Roblox window
@@ -91,7 +123,7 @@ public class ForcefieldHatBot {
 		
 		L(bot); //Activates AHK script to reset board
 		
-		bot.delay(5000);
+		bot.delay(45000);
 		
 		while(true) {
 			boolean[][][] c = new boolean[5][5][2];
@@ -120,7 +152,7 @@ public class ForcefieldHatBot {
 			if (resetNow) {
 				System.out.println("RESET");
 				L(bot);
-				bot.delay(5000);
+				bot.delay(45000);
 			} else {
 				System.out.println("no reset");
 				bot.delay(1000);
