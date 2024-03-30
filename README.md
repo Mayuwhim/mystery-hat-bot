@@ -1,3 +1,9 @@
+**UPDATE (2024-03-30)**
+
+I've quit DABS so don't expect this bot to be maintained. It's probably already broken anyway.
+
+I do know from testing that it usually takes 24-48 hours of AFK-ing _without_ the bot (+auto bingo on) to get the hat, and a third of that time with.
+
 # mystery-hat-bot
 For da amazing bunker simulator
 
@@ -20,7 +26,7 @@ Credits to [kwhat's jnativehook](https://github.com/kwhat/jnativehook) for hotke
 1. Open up DABS in windowed mode, maximized
 2. Go to Mr Bingo Man
 3. Get a bingo card, turn auto bingo off, move it to hotbar slot 2, UNEQUIP IT (but keep the cards on screen)
-4. Position your camera so you can click on Mr Bingo Man [HERE](https://cdn.discordapp.com/attachments/401130434378989592/1113543650673168426/bingomoment.png), or the card printer
+4. Position your camera so you can click on Mr Bingo Man [HERE](https://cdn.discordapp.com/attachments/401130434378989592/1113543650673168426/bingomoment.png?ex=6616e2d6&is=66046dd6&hm=d4bb576249413c4ee108f1ad8f64e7cd4a215676f7094d539da77ba6ab6f8463&), or the card printer
 5. Open up the `ForcefieldHatBot_2.exe` first, follow the instruction
 6. Making sure nothing except Roblox is obstructing the right side of the screen, open up the `.jar`
 7. You should be set!
@@ -37,6 +43,9 @@ Screenshot your screen with the bingo cards out, paste it in paint or something 
 
 Zoom in, put the x values of the RED pixels in the first array, and the y values of the PURPLE pixels in the second array
 
-[These pixels but on your own screenshot](https://cdn.discordapp.com/attachments/401130434378989592/1113543650673168426/bingomoment.png)
+[These pixels but on your own screenshot](https://cdn.discordapp.com/attachments/401130434378989592/1113543650673168426/bingomoment.png?ex=6616e2d6&is=66046dd6&hm=d4bb576249413c4ee108f1ad8f64e7cd4a215676f7094d539da77ba6ab6f8463&)
 
 And update the AHK script click location for your take a bingo card button location
+
+# What if I have the "extra bingo sheet" gamepass?
+The bot will not work because the detected pixels are misaligned. See above to edit which pixels are detected.
